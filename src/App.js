@@ -1,9 +1,11 @@
-import LandingPage from "./components/home/LandingPage";
-import CommanBtn from "./components/home/CommanBtn";
+import Header from './components/home/Header.jsx'
+
+let logoUrl = "/images/logo.svg"
+
 function App() {
   return (
     <div>
-      <CommanBtn text="Mausam" backgroundColor="rgba(0,0,0,0.08)" hoverColor="rgba(0, 0, 0, 0.178)" borderColor="transparent" color="rgba(0,0,0,0.6)" hoverBorderColor="rgba(0,0,0,0.6)" />
+      <Header logo={logoUrl} />
     </div>
   );
 }

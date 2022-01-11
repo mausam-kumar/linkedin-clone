@@ -29,6 +29,7 @@ const Button = styled.button`
 
     border-radius: 28px;
     padding: 8px 20px;
+    margin: 0 10px;
     border:1px solid ${props => props.borderColor};
 
     &:hover{
