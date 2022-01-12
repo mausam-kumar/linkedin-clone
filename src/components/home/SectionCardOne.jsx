@@ -44,7 +44,6 @@ const Container = styled.div`
     align-items:flex-start;
     /* border:1px solid red; */
     font-weight:300;
-    padding:15px;
     background-color:#FAF9F7;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 30px 0 50px 0;
