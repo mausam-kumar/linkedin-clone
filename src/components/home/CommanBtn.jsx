@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function CommanBtn({text,backgroundColor,borderColor,hoverColor,color,hoverBorderColor}) {
+function CommanBtn({text,backgroundColor,borderColor,hoverColor,color,hoverBorderColor,handleClick}) {
 
     return (
         <div>
@@ -10,6 +10,7 @@ function CommanBtn({text,backgroundColor,borderColor,hoverColor,color,hoverBorde
             hoverColor={hoverColor} 
             borderColor={borderColor}
             hoverBorderColor={hoverBorderColor}
+            onClick={handleClick}
             >{text}</Button>
         </div>
     )
