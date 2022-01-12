@@ -28,7 +28,7 @@ const Button = styled.button`
     transition: .3s all ease-in-out;
 
     border-radius: 28px;
-    padding: 8px 20px;
+    padding: 12px 20px;
     margin: 0 10px;
     border:1px solid ${props => props.borderColor};
 

@@ -1,11 +1,9 @@
-import Header from './components/home/Header.jsx'
-
-let logoUrl = "/images/logo.svg"
+import LandingPage from "./components/home/LandingPage";
 
 function App() {
   return (
     <div>
-      <Header logo={logoUrl} />
+      <LandingPage />
     </div>
   );
 }
