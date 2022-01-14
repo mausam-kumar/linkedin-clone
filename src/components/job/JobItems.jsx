@@ -1,3 +1,4 @@
+import React from "react";
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { Container } from '@mui/material';
@@ -16,11 +17,17 @@ const Img = styled('img')({
     maxHeight: '100%',
   });
 
+  
+
 export default function JobItems({data, key}){
-    console.log("in n", data);
+    const  [saved, setSaved] = React.useState(false);
     
-    const onContainer = (e) => {
-        console.log("id=", e.target.id)
+    // const onContainer = (e) => {
+    //     console.log("id=", e.target.id)
+    // }
+
+    const fun = () => {
+      setSaved(!saved);
     }
     return (
     //     <div id={data.title} onClick={(e) => alert(e.target.id)}>
@@ -42,7 +49,7 @@ export default function JobItems({data, key}){
     //     </div>
     // )
     <>
-    <Container id={key} onMouse={(e) => onContainer(e)} sx={{ p: 2, marginBottom: "30px", maxWidth: '100%', flexGrow: 1, cursor:"pointer" }}>
+    <Container id={key}  sx={{ p: 2, marginBottom: "30px", maxWidth: '100%', flexGrow: 1, cursor:"pointer" }}>
         <Grid container spacing={2}>
             <Grid item>
                 <ButtonBase sx={{ width: 128, height: 128 }}>
@@ -71,8 +78,8 @@ export default function JobItems({data, key}){
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <IconButton aria-label="delete" size="large">
-                        <BookmarkBorderOutlinedIcon fontSize="inherit" />
+                    <IconButton aria-label="delete" size="large" onClick={() => fun()}>
+                        {saved? <BookmarkIcon fontSize="inherit"/> :<BookmarkBorderOutlinedIcon fontSize="inherit" />}
                     </IconButton>
                 </Grid>
             </Grid>

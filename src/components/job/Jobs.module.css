@@ -1,12 +1,11 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.buttonIcon{
-    font-size: 2rem;
-    background-color: pink;
+.buttonIcon Button{
+    margin-bottom: "2rem";
 }
 .postJobBtn{
-    width: 97%;
+    width: 106%;
     border-radius: 30px;
     margin: 20px 0;
     height: 50px;
@@ -17,4 +16,14 @@
 }
 .postJobBtn:hover{
     background-color: rgba(10, 102, 194, 0.144);
+}
+
+.jobGuidance:hover{
+    background-color: rgba(128, 128, 128, 0.212);
+}
+
+
+.jobGuidanceMore:hover{
+    color: blue;
+    text-decoration: underline;
 }
