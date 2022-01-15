@@ -16,7 +16,7 @@ function Header() {
                 <IconContainer>
                     <Icons text="Discover" imageUrl="/images/compass.svg"/>
                     <Icons text="People" imageUrl="/images/people.svg"/>
-                    <Icons text="Learning" imageUrl="/images/learning.svg"/>
+                    <Link to="/main"><Icons text="Learning" imageUrl="/images/learning.svg"/></Link>
                     <Link to="/job"><Icons text="Jobs" imageUrl="/images/jobs.svg"/></Link>
                     {/* <Icons text="Jobs" imageUrl="/images/jobs.svg"/> */}
                 </IconContainer>

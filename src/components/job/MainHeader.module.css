@@ -1,0 +1,18 @@
+.headerCont {
+    width: 25%;
+    height: 100%;
+    margin-left: 10%;
+    float: left;   
+  }
+  .searchBar {
+    height: 40px;
+    width: 100%;
+    padding-left: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    color: rgb(149, 152, 156);
+    border-radius: 5px;
+    border: none;
+    background: rgb(238, 243, 248);
+  }
+  

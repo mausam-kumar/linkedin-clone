@@ -5,7 +5,7 @@
     margin-bottom: "2rem";
 }
 .postJobBtn{
-    width: 106%;
+    width: 100%;
     border-radius: 30px;
     margin: 20px 0;
     height: 50px;
@@ -26,4 +26,10 @@
 .jobGuidanceMore:hover{
     color: blue;
     text-decoration: underline;
+}
+.loading{
+    font-size: 25px;
+    margin: 200px auto;
+    text-align: center;
+
 }
