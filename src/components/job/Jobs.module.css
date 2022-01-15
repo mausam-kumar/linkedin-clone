@@ -9,9 +9,10 @@
     border-radius: 30px;
     margin: 20px 0;
     height: 50px;
+    text-decoration: none;
     font-size: large;
     color: rgb(10,102,194);
-    border:2px solid rgb(10,102,194);
+    border:1.5px solid rgb(10,102,194);
     cursor: pointer;
 }
 .postJobBtn:hover{
