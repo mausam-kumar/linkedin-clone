@@ -1,3 +1,4 @@
+import MainPage from "./components/feedPage/MainPage";
 import LandingPage from "./components/home/LandingPage";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";

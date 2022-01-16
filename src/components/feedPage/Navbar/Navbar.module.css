@@ -1,0 +1,79 @@
+.Navdiv{
+    background-color: #FFFFFF;
+    color: black;
+    height: 43px;
+    box-shadow: none;
+    border-bottom: 0.5px solid #EBEBEB;
+    margin: auto;
+    padding: 0 8%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Toolbar{
+    background-color: #FFFFFF;
+    height: 49px;
+    box-shadow: none;
+}
+
+.searchInput{
+    width: 260px;
+    height: 20px;
+    padding: .5rem;
+    background-color: #EEF3F8;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.searchInput:focus{
+    border: 0.5px solid #EBEBEB;
+    outline: none;
+}
+/* 
+.inputDiv{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 32px;
+    background-color: #EEF3F8;
+    border: none;
+    border-radius: 4px;
+} */
+
+
+.HomepageIcon{
+    height: 38px;
+    width: 70px;
+    display: flex;
+    border-bottom: 2px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.PageIcon{
+    height: 40px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: .5px;
+    cursor: pointer;
+}
+
+.IconCircle{
+    margin: auto;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    align-content: center;
+    overflow: hidden;
+}

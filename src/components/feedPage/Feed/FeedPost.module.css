@@ -1,0 +1,122 @@
+.FeedTextCard{
+    width: 96%;
+    min-height: 100px;
+    background-color: white;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 8px;
+    border: 1px solid #EBEBEB; 
+}
+
+.FeedPhotoCard{
+    width: 96%;
+    min-height: 100px;
+    background-color: white;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 8px;
+    border: 1px solid #EBEBEB;
+}
+
+.IconDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.IconPhotoDiv{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: #666666 .5px solid;
+}
+
+.InfoDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.InfoDiv p{
+    margin: 0;
+    font-size: 11px;
+    color: #666666;
+}
+
+
+.CardStatusDiv p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.LikesDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.LikesDiv p {
+    font-size: 11px;
+    color: #666666;
+    margin: 0;
+    cursor: pointer;
+}
+
+.LikesDiv p:hover {
+    text-decoration: underline;
+    color: #0A66C2;
+}
+
+.ButtonsDiv{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 95%;
+    gap: 8%;
+    border-top: #EBEBEB .5px solid;
+}
+
+.ReactionButton{
+    background-color: white;
+    min-width: 70px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.ReactionButton:hover{
+    background-color: #EBEBEB;
+}
+
+.ReactionButton p {
+    margin: 5px 0 0 0;
+    color: #8F8F8F;
+    font-weight: bolder;
+}
+
+.CardPhotoDiv{
+    width: 100%;
+    cursor: pointer;
+}
+
+.AuthorName{
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 0; 
+    color: #595959;
+}
+
+.AuthorName:hover{
+    text-decoration: underline;
+    color: #0A66C2;
+}
