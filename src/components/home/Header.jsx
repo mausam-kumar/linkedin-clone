@@ -20,8 +20,12 @@ function Header() {
                     <Icons text="Jobs" imageUrl="/images/jobs.svg"/>
                 </IconContainer>
                 <ButtonContainer>
-                    <CommanBtn text="Join Now" color="rgba(0,0,0,0.5)" hoverColor="rgba(0,0,0,0.2)" backgroundColor="transparent" borderColor="transparent" hoverBorderColor="transparent"/>
-                    <CommanBtn text="Join Now" color="#3481ce" hoverColor="#dcedff" backgroundColor="transparent" borderColor="#0A66C2" hoverBorderColor="#033568"/>
+                    <Link to="register">
+                        <CommanBtn text="Join Now" color="rgba(0,0,0,0.5)" hoverColor="rgba(0,0,0,0.2)" backgroundColor="transparent" borderColor="transparent" hoverBorderColor="transparent"/>
+                    </Link>
+                    <Link to="/login">
+                        <CommanBtn text="Sign in" color="#3481ce" hoverColor="#dcedff" backgroundColor="transparent" borderColor="#0A66C2" hoverBorderColor="#033568"/>
+                    </Link>
                 </ButtonContainer>
 
             </RightDiv>
