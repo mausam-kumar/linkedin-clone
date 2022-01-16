@@ -3,10 +3,10 @@ import styles from "./Feed.module.css"
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import ProfileDiv from "./ProfileDiv";
 import { useEffect, useState } from "react";
-// import '@fontsource/roboto/300.css';
-// import '@fontsource/roboto/400.css';
-// import '@fontsource/roboto/500.css';
-// import '@fontsource/roboto/700.css';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 import NewsDiv from "./NewsDiv";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { addPosts, getPosts } from "./api";

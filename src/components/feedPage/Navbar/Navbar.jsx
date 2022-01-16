@@ -16,10 +16,10 @@ import CommentIcon from '@mui/icons-material/Comment';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import GridOnIcon from '@mui/icons-material/GridOn';
 import WorkIcon from '@mui/icons-material/Work';
-// import '@fontsource/roboto/300.css';
-// import '@fontsource/roboto/400.css';
-// import '@fontsource/roboto/500.css';
-// import '@fontsource/roboto/700.css';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 function Navbar() {
     const [search, setSearch] = React.useState("");
