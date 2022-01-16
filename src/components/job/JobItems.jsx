@@ -26,28 +26,10 @@ export default function JobItems({data, key}){
     //     console.log("id=", e.target.id)
     // }
 
-    const fun = () => {
+    const funSaved = () => {
       setSaved(!saved);
     }
     return (
-    //     <div id={data.title} onClick={(e) => alert(e.target.id)}>
-    //         <Grid container spacing={2}>
-    //             <Grid item xs={2}>
-    //                 <h1>xs=2</h1>
-    //             </Grid>
-    //             <Grid item xs={8}>
-    //                 <h2>{data.title}</h2>
-    //                 <p>{data.comp_name}</p>
-    //             </Grid>
-    //             <Grid item xs={2}>
-    //                 <h1>xs=2</h1>
-    //             </Grid>
-
-    //         </Grid>
-
-    //         <hr/>
-    //     </div>
-    // )
     <>
     <Container id={key}  sx={{ p: 2, marginBottom: "30px", maxWidth: '100%', flexGrow: 1, cursor:"pointer" }}>
         <Grid container spacing={2}>
@@ -60,7 +42,7 @@ export default function JobItems({data, key}){
             <Grid item xs={12} sm container>
                 <Grid item xs container direction="column" spacing={2}>
                     <Grid item xs>
-                        <Typography className={styles.cont} gutterBottom variant="subtitle1" component="div" sx={{color: "rgb(10,102,194)", fontSize:"large"}}>
+                        <Typography style={{color:"rgb(10,102,194)"}} className={styles.cont} gutterBottom variant="subtitle1" component="div" sx={{color: "rgb(10,102,194)", fontSize:"large"}}>
                             {data.title}
                         </Typography>
                         <Typography variant="body2" gutterBottom>
@@ -78,14 +60,14 @@ export default function JobItems({data, key}){
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <IconButton aria-label="delete" size="large" onClick={() => fun()}>
+                    <IconButton aria-label="delete" size="large" onClick={() => funSaved()}>
                         {saved? <BookmarkIcon fontSize="inherit"/> :<BookmarkBorderOutlinedIcon fontSize="inherit" />}
                     </IconButton>
                 </Grid>
             </Grid>
         </Grid>        
     </Container>
-    <hr/>
+    <hr style={{color:"rgb(224,223,220)", border:"0.2px solid rgb(224,223,220)"}}/>
     </>
 
     )
