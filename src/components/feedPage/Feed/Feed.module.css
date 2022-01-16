@@ -1,0 +1,353 @@
+@media only screen and (max-width: 600px) {
+    .News{
+        display: none;
+    }
+
+    .MainDiv{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .News{
+        display: none;
+    }
+
+    .MainDiv{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .News{
+        display:none;
+    }
+
+    .MainDiv{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .News{
+        display:none;
+    }
+
+    .MainDiv{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .News{
+        display:block;
+    }
+
+    .MainDiv{
+        flex-direction: row;
+    }
+}
+
+
+.MainDiv{
+    background-color: #F3F2EF;
+    padding: 26px 8%;
+    display: flex;
+    gap: 20px;
+}
+
+.MainDiv p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Profile{
+    min-width: 220px;
+    height: 370px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border: 1px solid #EBEBEB; 
+}
+
+.StatusBox{
+    width: 498px;
+    height: 108px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 3% 3% 1% 3%;
+    gap: 10px;
+    border: 1px solid #EBEBEB; 
+}
+
+.MainFeed{
+    display: flex;
+    width: 530px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.News{
+    width: 310px;
+    height: 340px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid #EBEBEB; 
+    color:#595959;
+}
+
+.ViewsDiv{
+    width: 94%;
+    display: 60px;
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+    padding: 0 1% 0 5%;
+    cursor: pointer;
+}
+
+.ViewsDiv:hover{
+    background-color: #EBEBEB;
+}
+
+.InsightsDiv{
+    width: 100%; 
+    height: 60px;
+    border-bottom: 0.5px solid #EBEBEB; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0 1% 0 2%;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.InsightsDiv:hover{
+    background-color: #EBEBEB;
+}
+
+.ItemsDiv{
+    width: 98%;
+    height: 30px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    text-align: left;
+    gap: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.ItemsDiv:hover{
+    background-color: #EBEBEB;
+}
+
+.ProfileName:hover{
+    text-decoration: underline;
+}
+
+.SearchButton{
+    width: 430px;
+    background-color: white;
+    border: 0.5px solid #B2B2B2;
+    height: 44px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 4%;
+    color: #5E5E5E;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.SearchButton:hover{
+    background-color: #EBEBEB;
+}
+
+.AttachmentsDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+}
+
+.AttachButton{
+    background-color: white;
+    min-width: 70px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.AttachButton:hover{
+    background-color: #EBEBEB;
+}
+
+.AttachButton p {
+    margin: 5px 0 0 0;
+    color: #8F8F8F;
+    font-weight: bolder;
+}
+
+.Paper{
+    margin: 40px auto;
+    width: 550px;
+    height: 340px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 8px;
+}
+
+.ModalHeadDiv{
+    width: 93%;
+    height: 40px;
+    border-bottom: 0.5px solid #EBEBEB;
+    display: flex;
+    flex-direction: row;
+    color: #595959;
+    justify-content: start;
+    align-content: center;
+    text-align: left;
+    padding: 3% 2% 1% 5%;
+}
+
+.ModalHeadDiv button{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: #595959;
+    margin-left: 67%;
+}
+
+.ModalHeadDiv button:hover{
+    background-color: #EBEBEB;
+}
+
+.ModalInputDiv{
+    min-height: 200px;
+    width: 100%;
+}
+
+.PostingDiv{
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    border: #666666 .5px solid;
+    border-radius: 30px;
+    padding: 5px 10px 8px 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    min-width: 100px;
+    color: #6E6E6E;
+    cursor: pointer;
+}
+
+.PostingDiv:hover{
+    border: #666666 2px solid;
+    background-color: #EBEBEB;
+}
+
+.PostingName {
+    margin: 2px 5px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.StatusInput{
+    width: 92%;
+    min-height: 130px;
+    text-align: left;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    border: none;
+}
+
+.StatusInput:focus{
+    outline: none;
+}
+
+.StatusInputIcons{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 5px;
+}
+
+.UploadIcon{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.UploadIcon:hover{
+    background-color: #EBEBEB;
+}
+
+.PostButton{
+    background-color: #0A66C2;
+    color: white;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-left: 25%;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.PostButton:disabled{
+    background-color: #EBEBEB;
+    color: #A8A8A8;
+}
+
+.NewsDiv{
+    color: #595959;
+    padding-left: 20px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.NewsDiv p{
+    margin: 0 0 5px 0;
+}
+
+.NewsInfoDiv{
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    gap: 10px;
+}
+
+.NewsDiv:hover{
+    background-color: #EBEBEB;
+}
+
+.FeedPostsDiv{
+    width: 100%;
+    background-color: #F3F2EF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
