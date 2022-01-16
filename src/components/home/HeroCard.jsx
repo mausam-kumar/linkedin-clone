@@ -18,7 +18,7 @@ const Container = styled.div`
     margin-top:10px;
     align-items:center;
     justify-content:space-between;
-    padding: 2px 10px;
+    padding: 10px 10px;
     cursor: pointer;
     color: rgb(0,0,0,0.7);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
