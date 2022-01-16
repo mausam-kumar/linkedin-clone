@@ -1,3 +1,6 @@
+.cont{
+    color:rgb(10,102,194);
+}
 .cont:hover{
     text-decoration: underline;
 }

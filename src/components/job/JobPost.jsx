@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import styles from "./JobPost.module.css"
 import JobPostHeader from "./JobPostHeader";
-
+import {useNavigate} from 'react-router-dom'
 
 export default function JobPost(){
     const [formData, setFormData] = useState(
@@ -10,7 +10,10 @@ export default function JobPost(){
         "comp_name":"", 
         "location":"",
         "work_type":"",
-        "emp_type":""});
+        "emp_type":"",
+        "logo":"https://media-exp1.licdn.com/dms/image/C4E0BAQESZg0cWh_zQg/company-logo_200_200/0/1615568326109?e=2159024400&v=beta&t=XSmmuuLcNgRipMP6IzrqrkC9DIVAZUY9g7QPg0-vJN4"});
+
+    const navigate = useNavigate()
 
     const handleTitle = (e) => {
         var val = e.target.value
@@ -35,7 +38,7 @@ export default function JobPost(){
      async function handleSubmit(e){
          console.log("+++")
         e.preventDefault();
-        if(formData.title == "" || formData.comp_name == "" || formData.location == "" || formData.work_type == "" || formData.emp_type == ""){
+        if(formData.title === "" || formData.comp_name === "" || formData.location === "" || formData.work_type === "" || formData.emp_type === ""){
             alert("All fields are required!!");
             return;
         }
@@ -48,6 +51,8 @@ export default function JobPost(){
             'Content-Type': 'application/json'
             }, 
           })
+          .then(() => navigate("/job"))
+          .catch((err) => console.log(err))
           
     }
 
