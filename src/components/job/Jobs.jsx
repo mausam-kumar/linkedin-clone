@@ -2,6 +2,7 @@ import axios from 'axios'
 import JobItems from './JobItems';
 import styles from "./Jobs.module.css";
 import MainHeader from "./MainHeader.jsx";
+import Footer from "./Footer.jsx";
 import { Container } from '@mui/material';
 import { makeStyles } from '@material-ui/styles';
 import Box from '@mui/material/Box';
@@ -111,22 +112,27 @@ export default function Jobs(){
                             {isLoading? (<div className={styles.loading}>Loading...</div>) : data.map((item, i) => <JobItems data={item} key={i}/>)}
                         </Box>
                     </Box>
-                    <Box sx={{width:'30%',margin:"1rem 0 0 1rem", height:"210px", padding:"1rem", border:'1px solid rgb(224,223,220)', borderRadius:'10px', background:"white"}}>
-                        <h2 style={{"fontSize":"21px", "color":"rgb(25,25,25)", "marginBottom":0, color:"rgb(84,84,84)"}}>Job seeker guidance</h2>
-                        <p style={{"fontSize":"18px", "margin":0, color:"rgb(84,84,84)"}}>Recommended based on your activity</p>
-                        <Grid container direction="row" spacing={1} style={{ "margin": "10px 0 5px"}} className={styles.jobGuidance}>
-                            <Grid item xs={6} style={{"marginTop":"10px"}}>
-                                <ButtonBase >
-                                    <Typography style={{"textAlign":"left", "fontWeight":"bold", "fontSize":"18px", color:"rgb(84,84,84)"}}>I want to improve my resume</Typography>
-                                </ButtonBase>
+                    <Box sx={{width:"30%", margin:"1rem 0 0 1rem"}}>
+                        <Box sx={{width:'100%', height:"210px", padding:"1rem", border:'1px solid rgb(224,223,220)', borderRadius:'10px', background:"white"}}>
+                            <h2 style={{"fontSize":"21px", "color":"rgb(25,25,25)", "marginBottom":0, color:"rgb(84,84,84)"}}>Job seeker guidance</h2>
+                            <p style={{"fontSize":"18px", "margin":0, color:"rgb(84,84,84)"}}>Recommended based on your activity</p>
+                            <Grid container direction="row" spacing={1} style={{ "margin": "10px 0 5px"}} className={styles.jobGuidance}>
+                                <Grid item xs={6} style={{"marginTop":"10px"}}>
+                                    <ButtonBase >
+                                        <Typography style={{"textAlign":"left", "fontWeight":"bold", "fontSize":"18px", color:"rgb(84,84,84)"}}>I want to improve my resume</Typography>
+                                    </ButtonBase>
+                                </Grid>
+                                <Grid item xs={2}>
+                                    <ButtonBase sx={{ width: 128, height: 75 }}>
+                                        <Img alt="complex" src={resume} />
+                                    </ButtonBase>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={2}>
-                                <ButtonBase sx={{ width: 128, height: 75 }}>
-                                    <Img alt="complex" src={resume} />
-                                </ButtonBase>
-                            </Grid>
-                        </Grid>
-                        <Button style={{"fontSize":"19px",color:"rgb(84,84,84)","textTransform": "initial"}} className={styles.jobGuidanceMore} endIcon={<ArrowForwardIcon/>}>Show more</Button>
+                            <Button style={{"fontSize":"19px",color:"rgb(84,84,84)","textTransform": "initial"}} className={styles.jobGuidanceMore} endIcon={<ArrowForwardIcon/>}>Show more</Button>
+                        </Box>
+                        <Box>
+                            <Footer/>
+                        </Box>
                     </Box>
                 </Container>
 

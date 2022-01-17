@@ -1,0 +1,40 @@
+.footerDiv{
+    width: 100%;
+    display :flex;
+    flex-wrap:wrap;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.footerDiv button{
+    border: none;
+    margin:0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(84,84,84);
+}
+.footerDiv button:hover{
+    color:rgb(10,102,194);
+    text-decoration: underline;
+}
+.footerCopyRight{
+    padding-left: 2rem;
+    height:40px;
+    width:100%;
+}
+.footerCopyRight > div{
+    width:85%;
+    margin: auto;
+}
+.footerCopyRightLogo{
+    width:25%;
+    float:left;
+}
+.footerCopyRight img{
+    width:100%;
+    height:100%;
+}
+.footerCopyRight  p{
+    padding-top:0.7rem;
+    font-size:13px
+}

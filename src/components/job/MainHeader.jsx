@@ -6,10 +6,10 @@ import HeaderIcons from './HeaderIcons.jsx'
 import {Link} from "react-router-dom";
 import linkedinLogo from './images/linkedin.png';
 import Avatar from '@mui/material/Avatar';
+import SearchIcon from '@mui/icons-material/Search';
 
 const RightDiv = styled.div`
-    float:right;
-    margin-right: 5%;
+    float:left;
     padding-top:3px;
     width:50%;
     display:flex;
@@ -59,11 +59,22 @@ export default function Header() {
           style={{
             float: "left",
             paddingTop: "0.5rem",
-            width: "80%"
+            width: "30%",
           }}
         >
           <input type="text" placeholder="Search" className={styles.searchBar}/>
         </div>
+        <div
+          style={{
+            float: "left",
+            paddingTop: "0.5rem",
+            width: "30%",
+            marginLeft:"1.5rem"
+          }}
+        >
+          <input type="text" placeholder="City, state, or zip code" className={styles.searchBar}/>
+        </div>
+        <button className={styles.searchBtn}>Search</button>
       </div>
       <RightDiv>
                 <IconContainer>

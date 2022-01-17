@@ -36,47 +36,56 @@
       "logo": "https://media-exp1.licdn.com/dms/image/C560BAQE88xCsONDULQ/company-logo_100_100/0/1618231291419?e=1649894400&v=beta&t=60w9LdT_Qfic7UP5X_wIX7DaHCwj6Z0bxIcuNpV6CM4"
     },
     {
-      "title": "Mulesoft Developer",
-      "comp_name": "Infosys",
-      "location": "Bengaluru, Karnataka, India",
-      "logo": "https://media-exp1.licdn.com/dms/image/C4E0BAQHS0k_nLjbnKA/company-logo_100_100/0/1625111766048?e=1649894400&v=beta&t=WSbEtQTweiL90sDiDUmguFEPbfYuT0txUgJAATq7Nk0"
+      "title": "Software Engineer I",
+      "comp_name": "Mastercard",
+      "location": "Pune, Maharastra, India(On-site",
+      "logo": "https://media-exp1.licdn.com/dms/image/C560BAQGOW4NIyYRRqQ/company-logo_100_100/0/1519856263087?e=1650499200&v=beta&t=oO_m6C-Rme6yG0ukJvNNeM1vxJAjnRcQUbKhcdfctzg"
     },
     {
-      "title": "Software Development Engineer, RBS Tech",
-      "comp_name": "Amazon",
+      "title": "Siebel EIM-Developer",
+      "comp_name": "Wipro",
       "location": "Bengaluru, Karnataka, India(On-site)",
-      "logo": "https://media-exp1.licdn.com/dms/image/C560BAQHTvZwCx4p2Qg/company-logo_100_100/0/1612205615891?e=1649894400&v=beta&t=4MHcLjzk14xSfZefb2XCHBAzaGKKz4h0ax6QlMMqbIA"
+      "logo": "https://media-exp1.licdn.com/dms/image/C4E0BAQHRVy2pb26dkw/company-logo_100_100/0/1635867328165?e=1650499200&v=beta&t=zJa6EB9Y9fM6ERhmDcf1aObFmwKNGquJB9-aZsn9Mg8"
     },
     {
-      "title": "Software Engineer II",
+      "title": "Software Engineer",
+      "comp_name": "Dell Technologies",
+      "location": "Bengaluru, Karnataka, India (On-site)",
+      "logo": "https://media-exp1.licdn.com/dms/image/C4E0BAQHd5Km8_W6GVA/company-logo_100_100/0/1614178926580?e=1650499200&v=beta&t=Hk5dihiEQkkXjs3_hlcGgkxHPlTlnuWevP-YdUgApmE"
+    },
+    {
+      "title": "Software Engineer",
+      "comp_name": "JPMorgan Chase & Co.",
+      "location": "Hyderabad, Telangana, India",
+      "logo": "https://media-exp1.licdn.com/dms/image/C510BAQF_zIelQWSBvw/company-logo_100_100/0/1519856321426?e=1650499200&v=beta&t=NSq6FkLXFyvpZe93SrdJO8l0l2BJOlF_HPd6gYogct8"
+    },
+    {
+      "title": "Software Engineer",
+      "comp_name": "LTI-Larsen & Toubro Infotech",
+      "location": "Hyderabad, Telangana, India(On-site)",
+      "logo": "https://media-exp1.licdn.com/dms/image/C4D0BAQEtryuFS9S6Sw/company-logo_100_100/0/1641203008893?e=1650499200&v=beta&t=SxKLawJD0rD1FjjB54dPmjWI_h8WSSUcKbjjKXvA_as"
+    },
+    {
+      "title": "HTML",
+      "comp_name": "Mindtree",
+      "location": "Bengaluru, Karnataka, India(Hybrid)",
+      "logo": "https://media-exp1.licdn.com/dms/image/C510BAQHTWmlRNCPPAA/company-logo_100_100/0/1566913884488?e=1650499200&v=beta&t=XSAM8AOP6SmZvcb4BsCwW_LGzqct7DupWEuoKBJ15kU"
+    },
+    {
+      "title": "IDCHE_Software Engineer II",
       "comp_name": "Microsoft",
-      "location": "Hyderabad, Telangana, India (On-site)",
-      "logo": "https://media-exp1.licdn.com/dms/image/C560BAQE88xCsONDULQ/company-logo_100_100/0/1618231291419?e=1649894400&v=beta&t=60w9LdT_Qfic7UP5X_wIX7DaHCwj6Z0bxIcuNpV6CM4"
-    },
-    {
-      "title": "Mulesoft Developer",
-      "comp_name": "Infosys",
-      "location": "Bengaluru, Karnataka, India",
-      "logo": "https://media-exp1.licdn.com/dms/image/C4E0BAQHS0k_nLjbnKA/company-logo_100_100/0/1625111766048?e=1649894400&v=beta&t=WSbEtQTweiL90sDiDUmguFEPbfYuT0txUgJAATq7Nk0"
-    },
-    {
-      "title": "Software Development Engineer, RBS Tech",
-      "comp_name": "Amazon",
       "location": "Bengaluru, Karnataka, India(On-site)",
-      "logo": "https://media-exp1.licdn.com/dms/image/C560BAQHTvZwCx4p2Qg/company-logo_100_100/0/1612205615891?e=1649894400&v=beta&t=4MHcLjzk14xSfZefb2XCHBAzaGKKz4h0ax6QlMMqbIA"
-    },
-    {
-      "title": "Software Engineer II",
-      "comp_name": "Microsoft",
-      "location": "Hyderabad, Telangana, India (On-site)",
-      "logo": "https://media-exp1.licdn.com/dms/image/C560BAQE88xCsONDULQ/company-logo_100_100/0/1618231291419?e=1649894400&v=beta&t=60w9LdT_Qfic7UP5X_wIX7DaHCwj6Z0bxIcuNpV6CM4"
-    },
-    {
-      "title": "Software Development Engineer, RBS Tech",
-      "comp_name": "Amazon",
-      "location": "Bengaluru, Karnataka, India(On-site)",
-      "logo": "https://media-exp1.licdn.com/dms/image/C560BAQHTvZwCx4p2Qg/company-logo_100_100/0/1612205615891?e=1649894400&v=beta&t=4MHcLjzk14xSfZefb2XCHBAzaGKKz4h0ax6QlMMqbIA",
+      "logo": "https://media-exp1.licdn.com/dms/image/C560BAQE88xCsONDULQ/company-logo_100_100/0/1618231291419?e=1650499200&v=beta&t=wJlWQucVQd-weKSDF-Yi4NUMZJ3EAytVZ_zG-lnP8GI",
       "id": 1
+    },
+    {
+      "title": "Associate",
+      "comp_name": "Datametica",
+      "location": "Pune",
+      "work_type": "On-site",
+      "emp_type": "Part-time",
+      "logo": "https://media-exp1.licdn.com/dms/image/C4E0BAQESZg0cWh_zQg/company-logo_200_200/0/1615568326109?e=2159024400&v=beta&t=XSmmuuLcNgRipMP6IzrqrkC9DIVAZUY9g7QPg0-vJN4",
+      "id": 2
     }
   ]
 }
