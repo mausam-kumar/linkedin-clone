@@ -2,6 +2,7 @@ import axios from 'axios'
 import JobItems from './JobItems';
 import styles from "./Jobs.module.css";
 import MainHeader from "./MainHeader.jsx";
+import Footer from "./Footer.jsx";
 import { Container } from '@mui/material';
 import { makeStyles } from '@material-ui/styles';
 import Box from '@mui/material/Box';
@@ -70,6 +71,17 @@ export default function Jobs(){
     const [isLoading, setIsLoading] = useState(true);
     const classes = useStyles();
 
+    const searchForLocation = (loc) => {
+        setIsLoading(true);
+        axios.get(`http://localhost:3000/jobs?location_like=${loc}`)
+        .then(res => {
+            const dataItem = res.data.reverse();
+            setData(dataItem);
+            setIsLoading(false);
+        })
+        .catch(err => console.log(err))
+    }
+
     useEffect(()=>{
         axios.get("http://localhost:3000/jobs")
         .then(res => {
@@ -84,11 +96,11 @@ export default function Jobs(){
 
     return (
         <>
-            <MainHeader/>
+            <MainHeader searchLoc={searchForLocation}/>
             <div style={{"width":"100%", "margin": "0px", "paddingTop": "70px", "justifyContent":"center", "background":"rgb(243,242,239)", "display":"flex"}}>
                 <Container style={{"width":"100%", "padding": "0px", "justifyContent":"center", "background":"rgb(243,242,239)", "display":"flex"}}>
                     <Box sx={{width:"23%", mt:"1rem", position:"sticky", top:"4.5rem", height:"600px"}}>
-                        <Box sx={{width:'93%', height:"500px", paddingLeft:"1rem", border:'1px solid rgb(224,223,220)', borderRadius:'10px', background:"white"}}>
+                        <Box sx={{width:'92%', height:"500px", paddingLeft:"1rem", border:'1px solid rgb(224,223,220)', borderRadius:'10px', background:"white"}}>
                             <Button style={{"margin":"1rem 0 1rem", "fontSize":"17px", "color":"rgb(25,25,25)", "text-transform": "initial"}} color="inherit" startIcon={<BookmarkIcon style={{"fontSize":"28px", "color":"rgb(102,102,102)"}}/>}>My Jobs</Button>
                             <Button style={{"marginBottom":"1rem", "fontSize":"17px", "color":"rgb(25,25,25)", "text-transform": "initial"}} color="inherit" startIcon={<NotificationsIcon style={{"fontSize":"28px", "color":"rgb(102,102,102)"}}/>}>Job Alerts</Button>
                             <Button style={{"marginBottom":"1rem", "fontSize":"17px", "color":"rgb(25,25,25)", "text-transform": "initial"}} color="inherit" startIcon={<CurrencyRupeeIcon style={{"fontSize":"28px", "color":"rgb(102,102,102)"}}/>}>Salary</Button>
@@ -111,22 +123,27 @@ export default function Jobs(){
                             {isLoading? (<div className={styles.loading}>Loading...</div>) : data.map((item, i) => <JobItems data={item} key={i}/>)}
                         </Box>
                     </Box>
-                    <Box sx={{width:'30%',margin:"1rem 0 0 1rem", height:"210px", padding:"1rem", border:'1px solid rgb(224,223,220)', borderRadius:'10px', background:"white"}}>
-                        <h2 style={{"fontSize":"21px", "color":"rgb(25,25,25)", "marginBottom":0, color:"rgb(84,84,84)"}}>Job seeker guidance</h2>
-                        <p style={{"fontSize":"18px", "margin":0, color:"rgb(84,84,84)"}}>Recommended based on your activity</p>
-                        <Grid container direction="row" spacing={1} style={{ "margin": "10px 0 5px"}} className={styles.jobGuidance}>
-                            <Grid item xs={6} style={{"marginTop":"10px"}}>
-                                <ButtonBase >
-                                    <Typography style={{"textAlign":"left", "fontWeight":"bold", "fontSize":"18px", color:"rgb(84,84,84)"}}>I want to improve my resume</Typography>
-                                </ButtonBase>
+                    <Box sx={{width:"30%", margin:"1rem 0 0 1rem"}}>
+                        <Box sx={{width:'100%', height:"210px", padding:"1rem", border:'1px solid rgb(224,223,220)', borderRadius:'10px', background:"white"}}>
+                            <h2 style={{"fontSize":"21px", "color":"rgb(25,25,25)", "marginBottom":0, color:"rgb(84,84,84)"}}>Job seeker guidance</h2>
+                            <p style={{"fontSize":"18px", "margin":0, color:"rgb(84,84,84)"}}>Recommended based on your activity</p>
+                            <Grid container direction="row" spacing={1} style={{ "margin": "10px 0 5px"}} className={styles.jobGuidance}>
+                                <Grid item xs={6} style={{"marginTop":"10px"}}>
+                                    <ButtonBase >
+                                        <Typography style={{"textAlign":"left", "fontWeight":"bold", "fontSize":"18px", color:"rgb(84,84,84)"}}>I want to improve my resume</Typography>
+                                    </ButtonBase>
+                                </Grid>
+                                <Grid item xs={2}>
+                                    <ButtonBase sx={{ width: 128, height: 75 }}>
+                                        <Img alt="complex" src={resume} />
+                                    </ButtonBase>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={2}>
-                                <ButtonBase sx={{ width: 128, height: 75 }}>
-                                    <Img alt="complex" src={resume} />
-                                </ButtonBase>
-                            </Grid>
-                        </Grid>
-                        <Button style={{"fontSize":"19px",color:"rgb(84,84,84)","textTransform": "initial"}} className={styles.jobGuidanceMore} endIcon={<ArrowForwardIcon/>}>Show more</Button>
+                            <Button style={{"fontSize":"19px",color:"rgb(84,84,84)","textTransform": "initial"}} className={styles.jobGuidanceMore} endIcon={<ArrowForwardIcon/>}>Show more</Button>
+                        </Box>
+                        <Box style={{position:"sticky", top:"4.5rem"}}>
+                            <Footer/>
+                        </Box>
                     </Box>
                 </Container>
 
