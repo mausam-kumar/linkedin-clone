@@ -1,7 +1,7 @@
 .headerCont {
-    width: 37%;
+    width: 40%;
     height: 100%;
-    margin-left: 10%;
+    margin-left: 7%;
     float: left;  
   }
   .searchBar {
@@ -16,7 +16,7 @@
     background: rgb(238, 243, 248);
   }
   .searchBtn{
-    width: 18%;
+    width: 15%;
     border-radius: 20px;
     border: 1.5px solid rgb(10,102,194);
     height: 40px;

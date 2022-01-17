@@ -44,7 +44,17 @@ const Profile = styled.div`
         }
     }
 `
-export default function Header() {
+export default function Header({searchLoc}) {
+  const [loc, setLoc] = React.useState("");
+
+  const handleChange = (e) => {
+    setLoc(e.target.value);
+  }
+
+  const handleSearch = () => {
+    searchLoc(loc);
+  }
+
   return (
     <div style={{ height: "60px", position:"fixed", background:"white", width:"100%", zIndex:5}}>
       <div className={styles.headerCont}>
@@ -72,9 +82,9 @@ export default function Header() {
             marginLeft:"1.5rem"
           }}
         >
-          <input type="text" placeholder="City, state, or zip code" className={styles.searchBar}/>
+          <input type="text" placeholder="City, state, or zip code" value={loc} onChange={handleChange} className={styles.searchBar}/>
         </div>
-        <button className={styles.searchBtn}>Search</button>
+        <button className={styles.searchBtn} onClick={handleSearch}>Search</button>
       </div>
       <RightDiv>
                 <IconContainer>
