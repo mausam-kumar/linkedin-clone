@@ -1,8 +1,8 @@
 .headerCont {
-    width: 25%;
+    width: 40%;
     height: 100%;
-    margin-left: 10%;
-    float: left;   
+    margin-left: 7%;
+    float: left;  
   }
   .searchBar {
     height: 40px;
@@ -14,5 +14,21 @@
     border-radius: 5px;
     border: none;
     background: rgb(238, 243, 248);
+  }
+  .searchBtn{
+    width: 15%;
+    border-radius: 20px;
+    border: 1.5px solid rgb(10,102,194);
+    height: 40px;
+    background-color: white;
+    color: rgb(10,102,194);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 4%; 
+  }
+
+  .searchBtn:hover{
+    border: 2px solid rgb(10,102,194);
+    background-color: #15b5ff2c;
   }
   
