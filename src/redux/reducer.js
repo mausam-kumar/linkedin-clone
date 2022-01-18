@@ -21,6 +21,7 @@ export const reducer = (state=initState,action) => {
                 ...state,
                 auth:{
                     ...state.auth,
+                    isSuccess:true,
                     isError:true
                 }
             }
@@ -29,6 +30,7 @@ export const reducer = (state=initState,action) => {
                 ...state,
                 auth:{
                     ...state.auth,
+                    isSuccess:true,
                     isLoading:true
                 }
             }

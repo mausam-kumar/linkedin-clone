@@ -30,9 +30,9 @@ const Figure = styled.div`
     &>img{
         height:18px;
         width:18px;
-        &:hover{
+        /* &:hover{
             fill:rgba(0,0,0,0.9);
-        }
+        } */
     }
     &>figcaption{
         margin-top:3px;

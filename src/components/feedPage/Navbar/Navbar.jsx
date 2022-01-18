@@ -20,6 +20,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import {Link} from 'react-router-dom'
 
 function Navbar() {
     const [search, setSearch] = React.useState("");
@@ -33,7 +34,7 @@ function Navbar() {
             <div className={styles.Navdiv} >
                 <Box style={{display:"flex", flexDirection:"row", gap:".5rem"}}>
                     <Box>
-                        <LinkedInIcon />
+                        <Link to="/"><LinkedInIcon /></Link>
                     </Box>
                     <div>
                         <form>
@@ -45,7 +46,7 @@ function Navbar() {
                 <Box sx={{ display:"flex", flexDirection:"row", gap:1.5, marginLeft:"16%" }}>
                     <div className={styles.HomepageIcon} >
                         <div style={{margin: 0, padding:0}}>
-                            <HomeIcon sx={{ fontSize: 24, marginTop:1.5 }}/>
+                            <Link to="/feed"><HomeIcon sx={{ fontSize: 24, marginTop:1.5 }}/></Link>
                         </div>
                         <Typography variant="caption" sx={{ fontFamily:"Roboto", fontSize: 11.5, marginBottom:2, marginTop:-.5}}>Home</Typography>
                     </div>
@@ -57,7 +58,7 @@ function Navbar() {
                     </div>
                     <div className={styles.PageIcon} >
                         <div style={{margin: 0, padding:0}}>
-                            <BusinessCenterIcon sx={{ fontSize: 24, marginTop:1.5, color:"#666666" }}/>
+                            <Link to="/job"><BusinessCenterIcon sx={{ fontSize: 24, marginTop:1.5, color:"#666666" }}/></Link>
                         </div>
                         <Typography variant="caption" sx={{ fontSize: 11.5, marginBottom:2, marginTop:-.5, color:"#666666"}}>Jobs</Typography>
                     </div>

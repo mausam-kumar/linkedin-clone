@@ -4,6 +4,8 @@ import styles from "./Jobs.module.css";
 import MainHeader from "./MainHeader.jsx";
 import Footer from "./Footer.jsx";
 import { Container } from '@mui/material';
+import {useSelector} from "react-redux"
+import {Navigate} from "react-router-dom"
 import { makeStyles } from '@material-ui/styles';
 import Box from '@mui/material/Box';
 import {Button} from '@mui/material';
@@ -41,21 +43,6 @@ const useStyles = makeStyles({
         textAlign: "left",
         
     },
-    // buttonIcon: {
-    //     // padding:"1.5rem", 
-    //     // backgroundColor:"pink"
-    // }
-
-        // root:{
-        //     height: '100%',
-        //     overflow: 'hidden',
-        //     width: '100%',
-        //     m:0, 
-        //     p:0, 
-        //     justifyContent:"center", 
-        //     background:"rgb(243,242,239)", 
-        //     display:"flex"
-        // },
     })
 
     const Img = styled('img')({
@@ -93,9 +80,9 @@ export default function Jobs(){
           .catch(error=>console.log(error))
     },[])
     // console.log("print",data)
-
+    const {isSuccess} = useSelector(state => state.reducer.auth)
     return (
-        <>
+        isSuccess===true?<>
             <MainHeader searchLoc={searchForLocation}/>
             <div style={{"width":"100%", "margin": "0px", "paddingTop": "70px", "justifyContent":"center", "background":"rgb(243,242,239)", "display":"flex"}}>
                 <Container style={{"width":"100%", "padding": "0px", "justifyContent":"center", "background":"rgb(243,242,239)", "display":"flex"}}>
@@ -148,6 +135,6 @@ export default function Jobs(){
                 </Container>
 
             </div>
-        </>
+        </>:<Navigate to="/login"/>
     )
 }

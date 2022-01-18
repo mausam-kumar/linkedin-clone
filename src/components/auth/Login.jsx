@@ -26,9 +26,9 @@ function Login() {
     }
 
     function handleLogin(){
-        userLogin(state)
-        navigate("/")
-        console.log("running...")
+        dispatch(userLogin(state))
+        navigate("/feed")
+        
     }
 
     const style = {
@@ -52,7 +52,7 @@ function Login() {
                 <header>
                     Sign in
                 </header>
-                <p>Stay updated on your professional world</p>
+                <p style={{margin:"15px 0"}}>Stay updated on your professional world</p>
                 <TextField
                     sx={style.input}
                     helperText="Please enter your Email or Mobile"
@@ -72,10 +72,10 @@ function Login() {
                     value={state.password}
                     onChange={(e) => handleChange(e)}
                 />
-                <pre>
+                <pre style={{margin:"15px"}}>
                     Forgot password?
                 </pre>
-                <CommanBtn handleClick={handleLogin} style={style.btn} text="Sign in" color="white" hoverColor="#0A66C2" backgroundColor="#0A66C2" borderColor="transparent" hoverBorderColor="#0A66C2"/>
+                <CommanBtn style={style.btn} text="Sign in" color="white" hoverColor="#0A66C2" backgroundColor="#0A66C2" borderColor="transparent" hoverBorderColor="#0A66C2" handleClick={handleLogin}/>
                 <div>
                     <p>New to Linkedin</p>
                     <Link to="/register"><CommanBtn style={style.btn} text="Join Now" color="#0A66C2" hoverColor="transparent" backgroundColor="transparent" borderColor="transparent" hoverBorderColor="#0A66C2"/></Link>

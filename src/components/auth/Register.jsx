@@ -2,7 +2,9 @@ import React from 'react'
 import TextField from '@mui/material/TextField';
 import styled from 'styled-components'
 import CommanBtn from '../home/CommanBtn.jsx'
-import {Link} from 'react-router-dom'
+import {userRegister} from '../../redux/action.js'
+import {Link,useNavigate} from 'react-router-dom'
+import {useDispatch} from 'react-redux'
 
 function Register() {
 
@@ -11,11 +13,19 @@ function Register() {
         password:""
     })
 
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+
     function handleChange(e){
         setState({
             ...state,
             [e.target.name]:e.target.value
         })
+    }
+
+    function handleRegister(){
+        dispatch(userRegister(state))
+        navigate("/login")
     }
     const style = {
         input:{
@@ -25,7 +35,7 @@ function Register() {
         btn:{
             width: "100%",
             textAlign:"center",
-
+            marginTop: "20px"
         }
     }
     return (
@@ -55,10 +65,10 @@ function Register() {
                     value={state.password}
                     onChange={(e) => handleChange(e)}
                 />
-                <p>
+                <p style={{margin:"15px"}}>
                     By clicking Agree & Join, you agree to the LinkedIn User Agreement, Privacy Policy, and Cookie Policy.
                 </p>
-                <CommanBtn style={style.btn} text="Agree and Join" color="white" hoverColor="#0A66C2" backgroundColor="#0A66C2" borderColor="transparent" hoverBorderColor="#0A66C2"/>
+                <CommanBtn style={style.btn} text="Agree and Join" color="white" hoverColor="#0A66C2" backgroundColor="#0A66C2" borderColor="transparent" hoverBorderColor="#0A66C2" handleClick={handleRegister}/>
                 <div>
                     <p>Already on LinkedIn? </p>
                     <Link to="/login"><CommanBtn style={style.btn} text="Sign in" color="#0A66C2" hoverColor="transparent" backgroundColor="transparent" borderColor="transparent" hoverBorderColor="#0A66C2"/></Link>

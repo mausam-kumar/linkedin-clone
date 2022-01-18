@@ -31,15 +31,15 @@ export const userRegister = (data) => async (dispatch,getState) =>{
 
 } 
 
-export const userLogin = (data) => async (dispatch,getState) => {
+export const userLogin = ({email,password}) => async (dispatch,getState) => {
     dispatch({
         type:actionTypes.USER_LOGIN_REQUEST
     })
 
     try {
         const dataPayload = {
-            username:data.email,
-            password:data.password
+            username:email,
+            password
         }
         const payload = {
             url:`http://localhost:3001/auth/login`,
@@ -47,7 +47,8 @@ export const userLogin = (data) => async (dispatch,getState) => {
             data:dataPayload
         }
 
-        await axios(payload)
+        const {data} = await axios(payload)
+        console.log("data...")
         dispatch({
             type:actionTypes.USER_LOGIN_SUCCESS
         })

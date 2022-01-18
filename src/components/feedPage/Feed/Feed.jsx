@@ -11,6 +11,7 @@ import NewsDiv from "./NewsDiv";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { addPosts, getPosts } from "./api";
 import FeedPost from "./FeedPost";
+import FooterSection from '../../home/FooterSection'
 
 function Feed() {
     const [modal, setModal] = useState(false);
@@ -55,6 +56,9 @@ function Feed() {
     }
 
     return (
+        <div>
+
+       
         <div className={styles.MainDiv}>
 
             <Modal className={styles.Modal} open={modal} onClose={() => setModal(false)}>
@@ -147,7 +151,7 @@ function Feed() {
 
                 <div className={styles.StatusBox}>
                     <div style={{ display: "flex", flexDirection: "row", gap: "10px" }}>
-                        <div style={{ borderRadius: "50%", width: "44px", height: "44px", border: "border: #666666 .5px solid;", overflow: "hidden" }}>
+                        <div style={{ borderRadius: "50%", width: "44px", height: "44px", border: "border: #666666 .5px solid", overflow: "hidden" }}>
                             <img width="100%" src="https://media-exp1.licdn.com/dms/image/C560BAQG-DVu64TnfaQ/company-logo_100_100/0/1620381956947?e=1650499200&v=beta&t=XkbVbk3QwtbS9CsGy0xvNic6hwLqZgWSIOGdkUcLXsg" />
                         </div>
                         <div>
@@ -191,8 +195,8 @@ function Feed() {
             </div>
 
             <NewsDiv/>
-
-
+            </div>
+            <FooterSection />
         </div>
     )
 }
